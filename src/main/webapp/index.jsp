@@ -1,34 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Home - Home Page | Design Company - Free Website Template from Templatemonster.com</title>
   <meta charset="utf-8">
-  <script type="text/javascript" src="js/seajs/2.2.0/sea-debug.js" ></script>
-  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-  
-  <!--[if lt IE 7]>
-  	<link rel="stylesheet" href="css/ie/ie6.css" type="text/css" media="all">
-  <![endif]-->
-  <!--[if lt IE 9]>
-  	<script type="text/javascript" src="js/html5.js"></script>
-    <script type="text/javascript" src="js/IE9.js"></script>
-  <![endif]-->
+  <%@include file="./common/common.jsp" %>
 </head>
 
 <body>
   <!-- header -->
   <header>
     <div class="container">
-    	<h1><a href="index.html">Design Company</a></h1>
+    	<h1><a href="index.jsp">Design Company</a></h1>
       <nav>
         <ul>
-        	<li><a href="index.html" class="current">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="privacy.html">Privacy</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contacts.html">Contact</a></li>
-          <li><a href="sitemap.html">Sitemap</a></li>
+        	<li><a href="index.jsp" class="current">Home</a></li>
+          <li><a href="about.jsp">About</a></li>
+          <li><a href="privacy.jsp">Privacy</a></li>
+          <li><a href="gallery.jsp">Gallery</a></li>
+          <li><a href="contacts.jsp">Contact</a></li>
+          <li><a href="sitemap.jsp">Sitemap</a></li>
         </ul>
       </nav>
     </div>
@@ -102,7 +94,7 @@
     </div>
   </footer>
   <script type="text/javascript">
-	seajs.use('./js/main', function(init) {
+	seajs.use('./js/controller/index', function(init) {
 	//init.initPage();
 	});
 	// Cufon.now(); 

@@ -5,6 +5,9 @@ seajs.config({
     alias: {  
     	"jquery": "jquery/1.4.2/jquery-debug.js"
       },  
+    paths:{
+    	"webroot": "/spinning"
+    },
     // 下面配置自己理解
     charset: 'utf-8',
     timeout: 20000,
@@ -14,9 +17,11 @@ seajs.config({
 
 define(function(require, exports, module) {
 	
+	require("webroot/css/reset.css");
+	require("webroot/css/style.css");
 	var $ = require("jquery");
 	var Cufon = require("cufon-yui");
-	alert($.browser.version);
+	//alert($.browser.version);
 	//require("html5").funHtml();
 	require("Humanst521_BT_400.font");
 	require("Humanst521_Lt_BT_400.font");

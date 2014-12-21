@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="UTF-8"%>
 <html lang="en">
 <head>
   <title>About - About Page | Design Company - Free Website Template from Templatemonster.com</title>
