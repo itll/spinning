@@ -6,6 +6,7 @@
 package com.spinning.index;
 
 import com.jfinal.core.Controller;
+import com.spinning.util.Constants;
 
 /** 
  * @Description: 首页
@@ -15,6 +16,7 @@ import com.jfinal.core.Controller;
 public class IndexController extends Controller {
 
 	public void index() {
+		setSessionAttr("app", Constants.WEBROOT);
 		render("index.html");
 	}
 }
